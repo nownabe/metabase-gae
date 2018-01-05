@@ -1,24 +1,21 @@
-Metabase for Google App Engine
+Metabase on Google App Engine
 ==============================
 
-[Metabase](https://www.metabase.com/) for [Google App Engine](https://cloud.google.com/appengine/).
+Running [Metabase](https://www.metabase.com/) on [Google App Engine](https://cloud.google.com/appengine/).
 
 # Deploy
 
-If you don't have the project yet, create it.
+First of all, you have to create a project and enable billing in it.
 
-```bash
-gcloud projects create my-metabase-app --set-as-default
-```
-
-You get the project and then create app.
+Deploy Metabase to Google App Engine Flex Environment with `gcloud`.
 
 ```bash
 gcloud app create
+gcloud app deploy
 ```
 
-Build and deploy metabase to App Engine Flex Environment.
+Go to your metabase and enjoy it!
 
 ```bash
-make
+gcloud app browse
 ```
